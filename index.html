@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title></title>
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="Mclear">
+    <div class="title">
+      <div id="time" class="bg fl">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="restart" class="bg cur fl"></div>
+      <div id="tabnum" class="bg fl">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="shadow">
+      <canvas id="canvas"></canvas>
+      <div id="hint" class="animati2">
+        <div class="hbg">
+          <div id="load">加载中...</div>
+          <div id="text" style="display: none">
+            <img src="images/defeat.gif" />
+            <p>
+              呀！踩到炸弹啦！<br />
+              啊~~~
+            </p>
+            <br class="clear" />
+            <span id="butt">再来一次！</span>
+          </div>
+          <div id="Difficu" style="display: none">
+            <ul>
+              <li><span onclick="Difficulty('简单')">简单</span></li>
+              <li><span onclick="Difficulty('一般')">一般</span></li>
+              <li><span onclick="Difficulty('困难')">困难</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/Mclear.js"></script>
+</body>
+
+</html>
